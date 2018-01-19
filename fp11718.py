@@ -19,4 +19,8 @@ def tick():
 
 tick()
 
+
+from datetime import date
+today = str(date.today())
+canvas.create_text(50,25,text=str(today),fill='#000000')
 root.mainloop()# Event loop
