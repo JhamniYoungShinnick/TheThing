@@ -7,7 +7,7 @@ import time as Time
 root = tk.Tk()
 canvas = tk.Canvas(root, width=1000, height=300, borderwidth=0, highlightthickness=0, bg="white")
 canvas.grid() #Fills background white and creates a larger Canvas
-
+left = canvas.create_line(500, 300, 500, 0, fill='green', tags=('left'))
 time = Time.gmtime(Time.time())
 timeObject = canvas.create_text(500,250,text=str(time),fill='#000000')
 
